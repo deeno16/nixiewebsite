@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Nunito','Arial','sans-serif';
+    font-weight: 300;
+    font-size: 40px;
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+}
+.mac {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+    max-width: 1036px;
+    margin: 0 auto;
+}
+
+header {
+background: #5f2c82; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+
+#box1 {
+    /*zold*/
+    border-radius: 1em;
+    width: 30px;
+    height: 7.5px;
+    background-color:#81cdb9;
+    opacity: 0.85;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 35px;
+}
+
+#box2{
+    /*piros*/
+    margin-left: 75px;
+    border-radius: 1em;
+    width: 7.5px;
+    height: 30px;
+    background-color:#ea688c;
+    opacity: 0.85;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-left: 111px;
+    margin-top: 24px;
+}
+
+h1 {
+    color: #5d6685;
+    margin-left: 25px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
+    letter-spacing: 0.1px;
+    font-size: 120%;
+    width: 100px;
+    position: absolute;
+    margin-left: 62px;
+    margin-top: 2px;
+}
+h2 {
+    color: #5d6685;
+    margin-left: 93px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
+    letter-spacing: 0.1px;
+    font-size: 120%;
+    width: 100px;
+    position: absolute;
+    margin-left: 128px;
+    margin-top: 2px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.line-1 {
+    position: absolute;
+    top: 40%;  
+    margin:0 auto;
+    margin-left: 540px;
+    width: 2em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 70%;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(32) 1s 1 normal both,
+             blinkTextCursor 500ms steps(32) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 15.5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#cssmenu {
+  background:
+  width: auto;
+    float:right;
+    margin-right: 150px;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#cssmenu.align-right ul li {
+  float: right;
+}
+#cssmenu.align-center ul {
+  text-align: center;
+}
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: rgba(226, 55, 32, 0.8);
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
+
+
+/* Here's the good stuff */
+
+.flags{
+  font-size:6em;
+  line-height:1;
+  margin:0;
+  
+}
+.flag{
+  box-sizing:content-box;
+  display:inline-block;
+  position:relative;
+  width:.10em;
+  height:.10em;
+  margin:0; 
+  border-radius:50%;
+  overflow:hidden;
+  box-shadow:0;
+  opacity:.5;
+  transition: 1s;
+}
+
+.flag:hover, .flag.active{
+  border-radius:50%;
+  box-shadow:0 0 .2em #666;
+  opacity:1;
+  transform:rotate(-360deg);
+}
+/* UK */
+.en{
+    background: url(http://www.developmentmedia.net/sites/developmentmedia.net/files/american_us_flag_mini_button.jpg);
+    margin-top: 15px;
+    margin-right: 5px;
+    position:absolute;
+    top:0;
+    right:0;
+    background-size: 100%
+}
+
+/* RO */
+.ro{
+    background: url(http://www.crwflags.com/fotw/images/r/ro~min39.gif);
+    margin-top: 15px;
+    margin-right: 45px;
+    position:absolute;
+    top:0;
+    right:0;
+    background-size: 100%
+}
+
+
+/* HU */
+.hu{
+    background: url(http://qph.is.quoracdn.net/main-qimg-3b014db37c6751c4f23c2eb444547f53?convert_to_webp=true);
+    margin-top: 15px;
+    margin-right: 85px;
+    position:absolute;
+    top:0;
+    right:0;
+    background-size: 200%
+}
+
+background: #136a8a; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #136a8a , #267871); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #136a8a , #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
